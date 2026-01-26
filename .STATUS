@@ -1,0 +1,5 @@
+status: Active
+progress: 10
+next: Customize app settings or add personal tweaks
+target: Personal use
+notes: Personal fork of alexcding/gemini-desktop-mac. macOS wrapper for Google Gemini with floating chat bar.
