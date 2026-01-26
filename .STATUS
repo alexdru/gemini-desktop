@@ -1,6 +1,7 @@
 status: Active
 progress: 100
-next: None - ready for use
+next: None - ready for use (use Hyper+G shortcut)
 target: Personal use
 notes: Personal fork of alexcding/gemini-desktop-mac. macOS wrapper for Google Gemini with floating chat bar.
 completed: 2026-01-26 - Forked, documented, built, installed to /Applications
+known_issues: MenuBarExtra icon not showing - SwiftUI limitation with setActivationPolicy in .onAppear. Workaround: use keyboard shortcut (Hyper+G) to toggle chat bar. Fix requires refactoring to AppKit NSStatusItem.
