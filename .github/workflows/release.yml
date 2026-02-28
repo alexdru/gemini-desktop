@@ -32,9 +32,15 @@ jobs:
 
       - name: 📦 Package App into ZIP
         run: |
-          cd build/GeminiDesktop.xcarchive/Products/Applications/
+          cd build/*.xcarchive/Products/Applications/
           
-          zip -r ../../../../GeminiDesktop-macOS-arm64.zip "GeminiDesktop.app"
+          echo "Contents of Applications folder:"
+          ls -F
+          
+          APP_NAME=$(ls -d *.app | head -n 1)
+          echo "Found app: $APP_NAME"
+          
+          zip -r ../../../../GeminiDesktop-macOS-arm64.zip "$APP_NAME"
 
       - name: 🚀 Create GitHub Release
         uses: softprops/action-gh-release@v2
